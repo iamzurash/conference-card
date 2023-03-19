@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <title>Conference Card</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        </head>
+        <style>
+        * {
+            margin: 0;
+        }
+        body {
+            background-color: #ffcccc;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            row-gap: 40px;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(170, 132, 208);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+        }
+        .hide {
+            display: none;
+        }
+        .logo:hover + .hide {
+            display: block;
+        }
+        .text {
+            width: 80%;
+            background-color: #f0ece4;
+            padding: 20px;
+            font-size: 20px;
+            color: #35ab33;
+            font-weight: bolder;
+            font-style: italic;
+        }
+        h1 {
+            font-size: 2em;
+            color: black;
+        }
+        h2 {
+            font-size: 1.7em;
+            color: black;
+        }
+        h3 {
+            font-size: 1.5em;
+            color: black;
+        }
+        marquee {
+            margin-top: 50px;
+        }
+        .conf {
+            font-size: 30px;
+        }
+        hr {
+            border: 1px solid black;
+            width: 500px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            font-style: italic;
+            font-size: 15px;
+        }
+        </style>
+    <body>
+        <div class="logo">X</div>
+        <h3 class="hide">Heading</h3>
+        <h1>Heading Level 1, Lorem Ipsum</h1>
+        <h2>Heading level 2, Lorem ipsum</h2>
+        <hr/>
+        <p class="conf">conference details</p>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+                anim id est laborum.</p>
+        </div>
+        <ul>
+            <li>&#9751; Conference Field</li>
+            <li>&#9762; Conference Field</li>
+            <li>&#9770; Conference Field</li>
+            <marquee>12.10.20</marquee>
+        </ul>
+    </body>
+    </html>
